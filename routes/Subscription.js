@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { addSubscriber } = require("../brevo");
 
-router.post("/", async (req, res) => {
+router.post("/subscribe", async (req, res) => {
   const { email, FirstName } = req.body;
   if (!email) return res.status(400).json({ error: "Email is required" });
 
