@@ -8,7 +8,7 @@ const SubscriptionRoute = require('./routes/Subscription')
 const app = express()
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:3000'],
+    origin: ['https://www.monterowatch.com'],
     methods: "GET,POST,PUT,DELETE,PATCH",
     credentials: true, 
     allowedHeaders: ["Content-Type", "Authorization"],
